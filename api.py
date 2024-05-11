@@ -1,10 +1,14 @@
 from flask import Flask, render_template, request
 import google.generativeai as genai
 from markupsafe import Markup
+from dotenv import load_dotenv
+load_dotenv()
 
+import os
+GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
 app = Flask(__name__)
 
-GOOGLE_API_KEY = 'AIzaSyC2F7mJg7fyuQ1H-GwmuoTnLJnJ1bd35AM'  # Substitua 'SUA_API_KEY' pela sua API KEY
+GOOGLE_API_KEY = ''  # Substitua 'SUA_API_KEY' pela sua API KEY
 genai.configure(api_key=GOOGLE_API_KEY)
 
 generation_config = {
