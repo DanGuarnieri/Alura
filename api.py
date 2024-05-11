@@ -4,7 +4,7 @@ from markupsafe import Markup
 
 app = Flask(__name__)
 
-GOOGLE_API_KEY = 'AIzaSyC2F7mJg7fyuQ1H-GwmuoTnLJnJ1bd35AM' # Substitua 'SUA_API_KEY' pela sua API KEY
+GOOGLE_API_KEY = 'AIzaSyC2F7mJg7fyuQ1H-GwmuoTnLJnJ1bd35AM'  # Substitua 'SUA_API_KEY' pela sua API KEY
 genai.configure(api_key=GOOGLE_API_KEY)
 
 generation_config = {
@@ -24,9 +24,11 @@ model = genai.GenerativeModel(model_name='gemini-1.0-pro',
                               safety_settings=safety_settings,)
 chat = model.start_chat(history=[])
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
+
 
 @app.route("/generate_template", methods=['POST'])
 def generate_template():
@@ -35,7 +37,7 @@ def generate_template():
     salario = request.form['salario']
     tipo_contrato = request.form['tipo_contrato']
 
-     # Gerar prompt para o Gemini
+    # Gerar prompt para o Gemini
     prompt_template = f"""
     Crie um template de vaga de emprego **em HTML** para a empresa {empresa} para a posição de {cargo}, com salário de {salario} e tipo de contrato {tipo_contrato}. 
 
@@ -75,12 +77,22 @@ def generate_template():
     # Renderizar o HTML gerado pelo Gemini
     template = Markup(template)
 
-    return render_template("index.html", 
-                           empresa=empresa, 
-                           cargo=cargo, 
-                           salario=salario, 
+    # Salvar o template em um arquivo de texto
+    with open("templates_gerados.txt", "a", encoding="utf-8") as arquivo:
+        arquivo.write(f"-------------------------\n")
+        arquivo.write(f"Empresa: {empresa}\n")
+        arquivo.write(f"Cargo: {cargo}\n")
+        arquivo.write(f"Salário: {salario}\n")
+        arquivo.write(f"Tipo de Contrato: {tipo_contrato}\n")
+        arquivo.write(f"Template:\n{template}\n\n")
+
+    return render_template("index.html",
+                           empresa=empresa,
+                           cargo=cargo,
+                           salario=salario,
                            tipo_contrato=tipo_contrato,
                            template=template)
+
 
 if __name__ == "__main__":
     app.run(debug=True)

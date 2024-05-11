@@ -1,0 +1,66 @@
+-------------------------
+Empresa: GPA
+Cargo: Analista de Planejamento Jr
+Salário: 3800
+Tipo de Contrato: CLT
+Template:
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analista de Planejamento Jr - GPA</title>
+</head>
+<body>
+
+  <h1>Título da vaga: Analista de Planejamento Jr</h1>
+
+  <h2>Descrição da empresa:</h2>
+  <p>O GPA é uma das maiores empresas varejistas do Brasil, com mais de 1.000 lojas em todo o país. Estamos comprometidos em oferecer produtos e serviços de qualidade aos nossos clientes, além de criar um ambiente de trabalho desafiador e gratificante para nossos funcionários.</p>
+
+  <h2>Descrição da vaga:</h2>
+  <p>Estamos buscando um Analista de Planejamento Jr para se juntar à nossa equipe. O candidato ideal terá formação em Administração, Economia ou áreas afins, além de experiência prévia em análise de dados e planejamento estratégico.</p>
+
+  <h2>Responsabilidades:</h2>
+  <ul>
+    <li>Analisar dados de vendas e tendências de mercado</li>
+    <li>Desenvolver planos estratégicos para crescimento de vendas e expansão de negócios</li>
+    <li>Criar modelos financeiros e previsões</li>
+    <li>Monitorar o desempenho dos planos e fazer ajustes conforme necessário</li>
+    <li>Trabalhar em conjunto com outras equipes para garantir o alinhamento estratégico</li>
+  </ul>
+
+  <h2>Requisitos:</h2>
+  <ul>
+    <li>Graduação completa em Administração, Economia, Estatística, Engenharia ou áreas afins</li>
+    <li>Experiência prévia em análise de dados e planejamento estratégico</li>
+    <li>Proficiência em ferramentas de análise de dados (por exemplo, Excel, Power BI)</li>
+    <li>Conhecimento de princípios de planejamento estratégico</li>
+    <li>Habilidades de modelagem financeira e previsão</li>
+    <li>Compreensão de conceitos econômicos e de negócios</li>
+    <li>Capacidade analítica e de resolução de problemas</li>
+    <li>Orientação a resultados e capacidade de trabalhar de forma independente</li>
+    <li>Excelentes habilidades de comunicação e relacionamento interpessoal</li>
+    <li>Capacidade de trabalhar em equipe e sob pressão</li>
+    <li>Fluência em português</li>
+    <li>Desejável proficiência em inglês</li>
+  </ul>
+
+  <h2>Benefícios:</h2>
+  <ul>
+    <li>Salário competitivo de R$ 3.800,00</li>
+    <li>Contrato CLT</li>
+    <li>Plano de saúde e odontológico</li>
+    <li>Vale-refeição</li>
+    <li>Vale-transporte</li>
+    <li>Oportunidades de crescimento e desenvolvimento profissional</li>
+  </ul>
+
+  <h2>Informações adicionais:</h2>
+  <p>Estamos buscando candidatos altamente motivados e comprometidos com a excelência. Se você está procurando uma oportunidade desafiadora e gratificante em uma empresa líder do setor, não deixe de se candidatar.</p>
+
+  <p>Para se candidatar, envie seu currículo e uma carta de apresentação para [endereço de e-mail].</p>
+
+</body>
+</html>
+```
+
