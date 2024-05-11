@@ -10,6 +10,10 @@ O programa foi 100% criado utilizando Gemini, tendo em vista que não tenho nenh
 
 Execute a api.py, abra o link em sua internet "http://127.0.0.1:5000" e use a vontade.
 
+Após gerar o template, as informações irão para o arquivo de texto "Templates_Gerados" para futuras consultas caso necessário.
+
 Dica, abra o api.py via CMD utilizando o comando 'python api.py' para não ter que abrir outra IDE.
+
+
 
 
